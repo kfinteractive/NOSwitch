@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "NOSwitchButton.h"
+#import <NOSwitch/NOSwitch.h>
 
 @interface AppDelegate ()
 

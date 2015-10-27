@@ -10,10 +10,39 @@
 		DE71033919278E330039ECE9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE71033819278E330039ECE9 /* Cocoa.framework */; };
 		DE71034519278E330039ECE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE71034419278E330039ECE9 /* main.m */; };
 		DE71034C19278E330039ECE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE71034B19278E330039ECE9 /* AppDelegate.m */; };
-		DE71037019278E7B0039ECE9 /* NOSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE71036D19278E7B0039ECE9 /* NOSwitchButton.m */; };
-		DE71037119278E7B0039ECE9 /* NOSwitchButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE71036F19278E7B0039ECE9 /* NOSwitchButtonCell.m */; };
 		DE71037E192799910039ECE9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE71037D192799910039ECE9 /* MainMenu.xib */; };
+		F4B2E0001BDFD6C600150153 /* NOSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B2DFFF1BDFD6C600150153 /* NOSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B2E0041BDFD6C600150153 /* NOSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B2DFFD1BDFD6C600150153 /* NOSwitch.framework */; };
+		F4B2E0051BDFD6C600150153 /* NOSwitch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4B2DFFD1BDFD6C600150153 /* NOSwitch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4B2E00A1BDFD6E000150153 /* NOSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE71036D19278E7B0039ECE9 /* NOSwitchButton.m */; };
+		F4B2E00D1BDFD6E700150153 /* NOSwitchButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE71036F19278E7B0039ECE9 /* NOSwitchButtonCell.m */; };
+		F4B2E00E1BDFD7C900150153 /* NOSwitchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DE71036C19278E7B0039ECE9 /* NOSwitchButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B2E00F1BDFD7C900150153 /* NOSwitchButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DE71036E19278E7B0039ECE9 /* NOSwitchButtonCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4B2E0021BDFD6C600150153 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE71032D19278E320039ECE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B2DFFC1BDFD6C600150153;
+			remoteInfo = NOSwitch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4B2E0091BDFD6C600150153 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4B2E0051BDFD6C600150153 /* NOSwitch.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DE71033519278E330039ECE9 /* NOSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +61,9 @@
 		DE71036E19278E7B0039ECE9 /* NOSwitchButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NOSwitchButtonCell.h; sourceTree = "<group>"; };
 		DE71036F19278E7B0039ECE9 /* NOSwitchButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NOSwitchButtonCell.m; sourceTree = "<group>"; };
 		DE71037D192799910039ECE9 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		F4B2DFFD1BDFD6C600150153 /* NOSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NOSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B2DFFF1BDFD6C600150153 /* NOSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOSwitch.h; sourceTree = "<group>"; };
+		F4B2E0011BDFD6C600150153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +72,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE71033919278E330039ECE9 /* Cocoa.framework in Frameworks */,
+				F4B2E0041BDFD6C600150153 /* NOSwitch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B2DFF91BDFD6C600150153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +89,8 @@
 		DE71032C19278E320039ECE9 = {
 			isa = PBXGroup;
 			children = (
-				DE71033E19278E330039ECE9 /* NOSwitch */,
+				DE71033E19278E330039ECE9 /* NOSwitchDemo */,
+				F4B2DFFE1BDFD6C600150153 /* NOSwitch */,
 				DE71033719278E330039ECE9 /* Frameworks */,
 				DE71033619278E330039ECE9 /* Products */,
 			);
@@ -59,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				DE71033519278E330039ECE9 /* NOSwitch.app */,
+				F4B2DFFD1BDFD6C600150153 /* NOSwitch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,18 +125,15 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		DE71033E19278E330039ECE9 /* NOSwitch */ = {
+		DE71033E19278E330039ECE9 /* NOSwitchDemo */ = {
 			isa = PBXGroup;
 			children = (
-				DE71036C19278E7B0039ECE9 /* NOSwitchButton.h */,
-				DE71036D19278E7B0039ECE9 /* NOSwitchButton.m */,
-				DE71036E19278E7B0039ECE9 /* NOSwitchButtonCell.h */,
-				DE71036F19278E7B0039ECE9 /* NOSwitchButtonCell.m */,
 				DE71034A19278E330039ECE9 /* AppDelegate.h */,
 				DE71034B19278E330039ECE9 /* AppDelegate.m */,
 				DE71037D192799910039ECE9 /* MainMenu.xib */,
 				DE71033F19278E330039ECE9 /* Supporting Files */,
 			);
+			name = NOSwitchDemo;
 			path = NOSwitch;
 			sourceTree = "<group>";
 		};
@@ -108,25 +147,71 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F4B2DFFE1BDFD6C600150153 /* NOSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				DE71036C19278E7B0039ECE9 /* NOSwitchButton.h */,
+				DE71036D19278E7B0039ECE9 /* NOSwitchButton.m */,
+				DE71036E19278E7B0039ECE9 /* NOSwitchButtonCell.h */,
+				DE71036F19278E7B0039ECE9 /* NOSwitchButtonCell.m */,
+				F4B2DFFF1BDFD6C600150153 /* NOSwitch.h */,
+				F4B2E0011BDFD6C600150153 /* Info.plist */,
+			);
+			path = NOSwitch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		F4B2DFFA1BDFD6C600150153 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B2E0001BDFD6C600150153 /* NOSwitch.h in Headers */,
+				F4B2E00E1BDFD7C900150153 /* NOSwitchButton.h in Headers */,
+				F4B2E00F1BDFD7C900150153 /* NOSwitchButtonCell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		DE71033419278E330039ECE9 /* NOSwitch */ = {
+		DE71033419278E330039ECE9 /* NOSwitchDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE71036619278E330039ECE9 /* Build configuration list for PBXNativeTarget "NOSwitch" */;
+			buildConfigurationList = DE71036619278E330039ECE9 /* Build configuration list for PBXNativeTarget "NOSwitchDemo" */;
 			buildPhases = (
 				DE71033119278E330039ECE9 /* Sources */,
 				DE71033219278E330039ECE9 /* Frameworks */,
 				DE71033319278E330039ECE9 /* Resources */,
+				F4B2E0091BDFD6C600150153 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4B2E0031BDFD6C600150153 /* PBXTargetDependency */,
+			);
+			name = NOSwitchDemo;
+			productName = testSwitch;
+			productReference = DE71033519278E330039ECE9 /* NOSwitch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4B2DFFC1BDFD6C600150153 /* NOSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B2E0061BDFD6C600150153 /* Build configuration list for PBXNativeTarget "NOSwitch" */;
+			buildPhases = (
+				F4B2DFF81BDFD6C600150153 /* Sources */,
+				F4B2DFF91BDFD6C600150153 /* Frameworks */,
+				F4B2DFFA1BDFD6C600150153 /* Headers */,
+				F4B2DFFB1BDFD6C600150153 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = NOSwitch;
-			productName = testSwitch;
-			productReference = DE71033519278E330039ECE9 /* NOSwitch.app */;
-			productType = "com.apple.product-type.application";
+			productName = NOSwitch;
+			productReference = F4B2DFFD1BDFD6C600150153 /* NOSwitch.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -134,8 +219,13 @@
 		DE71032D19278E320039ECE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Yuriy Panfyorov";
+				TargetAttributes = {
+					F4B2DFFC1BDFD6C600150153 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
 			};
 			buildConfigurationList = DE71033019278E320039ECE9 /* Build configuration list for PBXProject "NOSwitch" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -150,7 +240,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE71033419278E330039ECE9 /* NOSwitch */,
+				DE71033419278E330039ECE9 /* NOSwitchDemo */,
+				F4B2DFFC1BDFD6C600150153 /* NOSwitch */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +255,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4B2DFFB1BDFD6C600150153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -171,14 +269,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE71037019278E7B0039ECE9 /* NOSwitchButton.m in Sources */,
-				DE71037119278E7B0039ECE9 /* NOSwitchButtonCell.m in Sources */,
 				DE71034C19278E330039ECE9 /* AppDelegate.m in Sources */,
 				DE71034519278E330039ECE9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4B2DFF81BDFD6C600150153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B2E00D1BDFD6E700150153 /* NOSwitchButtonCell.m in Sources */,
+				F4B2E00A1BDFD6E000150153 /* NOSwitchButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4B2E0031BDFD6C600150153 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4B2DFFC1BDFD6C600150153 /* NOSwitch */;
+			targetProxy = F4B2E0021BDFD6C600150153 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DE71036419278E330039ECE9 /* Debug */ = {
@@ -198,6 +311,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -259,6 +373,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NOSwitch/NOSwitch-Prefix.pch";
 				INFOPLIST_FILE = "NOSwitch/NOSwitch-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neobia.NOSwitchDemo;
 				PRODUCT_NAME = NOSwitch;
 				WRAPPER_EXTENSION = app;
 			};
@@ -272,8 +388,63 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NOSwitch/NOSwitch-Prefix.pch";
 				INFOPLIST_FILE = "NOSwitch/NOSwitch-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neobia.NOSwitchDemo;
 				PRODUCT_NAME = NOSwitch;
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F4B2E0071BDFD6C600150153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = NOSwitch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neobia.NOSwitch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4B2E0081BDFD6C600150153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = NOSwitch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neobia.NOSwitch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -289,7 +460,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE71036619278E330039ECE9 /* Build configuration list for PBXNativeTarget "NOSwitch" */ = {
+		DE71036619278E330039ECE9 /* Build configuration list for PBXNativeTarget "NOSwitchDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE71036719278E330039ECE9 /* Debug */,
@@ -297,6 +468,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F4B2E0061BDFD6C600150153 /* Build configuration list for PBXNativeTarget "NOSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B2E0071BDFD6C600150153 /* Debug */,
+				F4B2E0081BDFD6C600150153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

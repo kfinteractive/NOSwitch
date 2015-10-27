@@ -1,3 +1,5 @@
+[![Carthage compatible](#)(https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 ## NOSwitch
 
 A subclass of NSButton which looks similar to the UISwitch control in iOS7
